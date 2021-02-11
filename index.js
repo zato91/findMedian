@@ -1,7 +1,7 @@
 function findMedian(n) {
 
- if(n.length ===0) return 0;
- // if the array is empty return 0
+ if(n.length === 1) return n[0];
+ // we assume the array contain at least one price, if it is the case we just return the value
 
   let arr = radixSort(n)
   // we sort the array but instead the sort method O(n2)
